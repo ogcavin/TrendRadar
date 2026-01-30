@@ -336,11 +336,11 @@ ai:
   # 完整列表: https://docs.litellm.ai/docs/providers
   # 如果你对于看英文文档比较头疼，那么可以点击页面右下角的 【Ask AI】 ,用中文询问怎么配置 
   
-  model: "deepseek/deepseek-chat"
+  model: "deepseek/deepseek-v3-0324"
 
-  api_key: ""                       # API Key（建议使用环境变量 AI_API_KEY）
+  api_key: "sk_bmlqtMJzhUZEAxvaJQbi9Dcz5UdhrAbbsWbNcDi7h1U"                       # API Key（建议使用环境变量 AI_API_KEY）
   
-  api_base: ""                      # 自定义 API 端点（可选，大多数情况留空）
+  api_base: "https://api.jiekou.ai/openai"                      # 自定义 API 端点（可选，大多数情况留空）
                                     # 示例: https://api.openai.com/v1（自建代理或兼容接口）
                                     #
                                     # 💡 超级重要：连接任意兼容 OpenAI 协议的模型商
@@ -408,7 +408,7 @@ ai_analysis:
   # 分析报告输出语言
   # 格式：自然语言描述
   # 示例: "English", "Korean", "法语"
-  language: "Chinese"
+  language: "English"
 
   # 提示词配置文件路径（相对于 config 目录）
   prompt_file: "ai_analysis_prompt.txt"
@@ -453,7 +453,7 @@ ai_analysis:
 # 模型配置见上方 ai 配置段
 # ===============================================================
 ai_translation:
-  enabled: false                    # 是否启用翻译功能
+  enabled: true                    # 是否启用翻译功能
 
   # 翻译目标语言
   # 格式：自然语言描述
